@@ -1,0 +1,27 @@
+body {
+  font-family: $roboto;
+  color: $main-text-color;
+  background-color: #ffffff;
+}
+// заголовки секций
+.section__title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* основной цвет текста */
+.section__title,
+.feature__title,
+.work__title {
+  color: $main-text-color;
+}
+/* вторичный цвет текста */
+.contact__link,
+.feature__text,
+.team__text,
+.work__text {
+  color: $secondary-text-color;
+}

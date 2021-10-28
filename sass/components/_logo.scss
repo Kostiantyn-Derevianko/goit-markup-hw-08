@@ -1,0 +1,28 @@
+/* Основной цвет логотипа */
+.header-logo {
+  margin-right: 93px;
+
+  font-family: $raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.footer-logo {
+  display: block;
+  padding-top: 60px;
+  margin-bottom: 20px;
+
+  font-family: $raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: $white-text-color;
+}
+/* Красит часть логотипа в синий цвет в хидере и футере*/
+.header-logo_web-logo,
+.footer-logo_web-logo {
+  color: $accent-color;
+}
