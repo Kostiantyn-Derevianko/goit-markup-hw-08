@@ -145,8 +145,15 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border-color: $accent-color;
+  }
 }
 .checkbox {
+  &:hover + .checkbox__custom {
+    border-color: $button-accent-color;
+  }
   &:checked + .checkbox__custom {
     background-color: $button-accent-color;
     border-color: $button-accent-color;
