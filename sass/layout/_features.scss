@@ -1,17 +1,32 @@
 /*-------НАШИ ОСОБЕННОСТИ------- */
 .feature {
-  display: flex;
+  // для мобилы
+  margin: 0 auto;
+  max-width: 450px;
+  // для десктопа
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    max-width: 100%;
+  }
 }
 .feature__item {
+  // для мобилы
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  // для десктопа
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+    width: 270px;
   }
 }
 .feature__box {
   display: flex;
-
   margin-bottom: 30px;
-  width: 270px;
+
   height: 120px;
   background-color: $backgr-btn-color;
   align-items: center;
@@ -24,6 +39,11 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .feature__text {
   font-size: 14px;

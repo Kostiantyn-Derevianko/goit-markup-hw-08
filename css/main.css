@@ -27,7 +27,7 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 hr {
@@ -229,10 +229,27 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* Свойства стандартной кнопки */
@@ -303,12 +320,15 @@ body {
 }
 
 /*-------------- HEADER-------------- */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__container {
   display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -588,17 +608,34 @@ body {
 
 /*-------НАШИ ОСОБЕННОСТИ------- */
 .feature {
-  display: flex;
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 1200px) {
+  .feature {
+    display: flex;
+    max-width: 100%;
+  }
 }
 
 .feature__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    width: 270px;
+  }
+  .feature__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
 }
 
 .feature__box {
   display: flex;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   align-items: center;
@@ -611,6 +648,13 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__title {
+    text-align: left;
+  }
 }
 
 .feature__text {
