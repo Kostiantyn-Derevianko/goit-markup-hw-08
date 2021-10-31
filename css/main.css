@@ -27,7 +27,7 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 hr {
@@ -612,15 +612,38 @@ body {
   max-width: 450px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .feature {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
     max-width: 100%;
   }
 }
 
-.feature__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .feature {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 354px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -629,7 +652,6 @@ body {
   }
   .feature__item:not(:last-child) {
     margin-right: 30px;
-    margin-bottom: 0px;
   }
 }
 
@@ -651,7 +673,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .feature__title {
     text-align: left;
   }
