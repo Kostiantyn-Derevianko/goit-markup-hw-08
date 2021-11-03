@@ -27,7 +27,7 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 hr {
@@ -609,7 +609,6 @@ body {
 /*-------НАШИ ОСОБЕННОСТИ------- */
 .feature {
   margin: 0 auto;
-  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) {
@@ -618,16 +617,13 @@ body {
     flex-wrap: wrap;
     margin-left: calc(-1 * 30px);
     margin-top: calc(-1 * 30px);
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature {
     display: flex;
-    flex-wrap: nowrap;
     margin: 0 auto;
-    max-width: 100%;
   }
 }
 
@@ -736,6 +732,22 @@ body {
   padding-top: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team {
+    display: flex;
+  }
+}
+
 .team__item {
   margin: 0 auto;
   max-width: 450px;
@@ -744,8 +756,28 @@ body {
   background-color: #ffffff;
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
+  .team__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__content {

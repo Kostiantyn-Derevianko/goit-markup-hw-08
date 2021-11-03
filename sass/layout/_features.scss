@@ -2,7 +2,7 @@
 .feature {
   // для мобилы
   margin: 0 auto;
-  max-width: 450px;
+  // max-width: 450px;
 
   // для таблетки
   @media screen and (min-width: 768px) {
@@ -11,16 +11,16 @@
     margin-left: calc(-1 * #{$card-set-gap});
     margin-top: calc(-1 * #{$card-set-gap});
 
-    max-width: 100%;
+    // max-width: 100%;
   }
 
   // для десктопа
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
 
     margin: 0 auto;
-    max-width: 100%;
+    // max-width: 100%;
   }
 }
 .feature__item {
