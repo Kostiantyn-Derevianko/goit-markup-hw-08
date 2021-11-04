@@ -20,6 +20,10 @@
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: $white-text-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 /* Красит часть логотипа в синий цвет в хидере и футере*/
 .header-logo_web-logo,
