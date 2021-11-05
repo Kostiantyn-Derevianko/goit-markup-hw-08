@@ -11,8 +11,9 @@
 }
 .footer-logo {
   display: block;
-  padding-top: 60px;
+  // padding-top: 60px;
   margin-bottom: 20px;
+  text-align: center;
 
   font-family: $raleway;
   font-weight: 700;
@@ -21,8 +22,8 @@
   letter-spacing: 0.03em;
   color: $white-text-color;
 
-  @media screen and (max-width: 767px) {
-    text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 /* Красит часть логотипа в синий цвет в хидере и футере*/
