@@ -1,6 +1,11 @@
 /*-------ЧЕМ ЗАНИМАЕМСЯ------- */
 .activity {
-  display: flex;
+  display: none;
+}
+.activity {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .activity__item {
   position: relative;

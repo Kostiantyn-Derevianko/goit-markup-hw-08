@@ -193,6 +193,16 @@ body {
   letter-spacing: 0.03em;
 }
 
+.section__title--hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title--hidden {
+    display: block;
+  }
+}
+
 /* основной цвет текста */
 .section__title,
 .feature__title,
@@ -233,6 +243,12 @@ body {
 
 .section--no-padding-top {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .section--no-padding-top {
+    padding-bottom: 0;
+  }
 }
 
 .container {
@@ -692,7 +708,13 @@ body {
 
 /*-------ЧЕМ ЗАНИМАЕМСЯ------- */
 .activity {
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .activity {
+    display: flex;
+  }
 }
 
 .activity__item {
