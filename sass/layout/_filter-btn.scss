@@ -1,16 +1,34 @@
 /*---КНОПКИ ФИЛЬТРОВ В ПОРТФОЛИО---*/
 .filter {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: (40px - 15px);
+  justify-content: left;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .filter__item {
   &:not(:last-child) {
     margin-right: 8px;
   }
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 .filter__btn {
-  padding: 4px 20px;
+  padding: 6px 22px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 4px 20px;
+  }
 
   font-family: inherit;
   font-weight: 500;
