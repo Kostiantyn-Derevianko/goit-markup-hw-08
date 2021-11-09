@@ -6,8 +6,22 @@
   display: flex;
   align-items: center;
 
-  padding-top: 24px;
-  padding-bottom: 25px;
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    max-width: 480px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .nav__notmobile {
   @media (max-width: 767px) {
@@ -23,10 +37,6 @@
     width: 1200px;
   }
 }
-// .nav {
-//   display: flex;
-//   align-items: center;
-// }
 /* элементы навигации в хидере студии*/
 .nav__list {
   display: flex;
@@ -79,7 +89,7 @@
   display: flex;
   align-items: center;
 
-  padding-top: 10px;
+  // padding-top: 10px;
 
   font-weight: 500;
   font-size: 12px;
@@ -100,8 +110,15 @@
   }
 }
 .contact__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 .contact__icon {
