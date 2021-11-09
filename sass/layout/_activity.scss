@@ -3,7 +3,7 @@
   display: none;
 }
 .activity {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
 }

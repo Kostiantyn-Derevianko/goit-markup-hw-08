@@ -17,7 +17,7 @@
   margin-left: $card-set-gap;
   margin-top: $card-set-gap;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 3 - #{$card-set-gap});
   }
   @media screen and (min-width: 1200px) {

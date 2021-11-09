@@ -79,7 +79,6 @@
   }
 }
 .contact {
-  // display: flex;
   margin-left: auto;
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -88,8 +87,6 @@
 .contact__link {
   display: flex;
   align-items: center;
-
-  // padding-top: 10px;
 
   font-weight: 500;
   font-size: 12px;
@@ -103,8 +100,6 @@
     color: $accent-color;
   }
   @media screen and (min-width: 1200px) {
-    // padding-top: 32px;
-    // padding-bottom: 32px;
     font-size: 14px;
     line-height: calc(16 / 14);
   }
