@@ -7,10 +7,10 @@
   letter-spacing: 0.03em;
   color: #000000;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 88px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 93px;
 
     font-size: 26px;
@@ -29,7 +29,7 @@
   letter-spacing: 0.03em;
   color: $white-text-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     text-align: left;
   }
 }

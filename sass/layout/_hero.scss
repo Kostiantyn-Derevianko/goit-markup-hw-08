@@ -3,7 +3,7 @@
   height: 400px;
   background-color: #c4c4c4;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     height: 600px;
   }
 }
@@ -35,7 +35,7 @@
       background-image: $gradient, url(../img/tablet/hero@2x.jpg);
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -62,7 +62,7 @@
   text-transform: uppercase;
   color: $white-text-color;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     line-height: 1.36;
     font-size: 44px;
     line-height: 1.36;

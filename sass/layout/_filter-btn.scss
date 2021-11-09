@@ -5,7 +5,7 @@
   justify-content: left;
   flex-wrap: wrap;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     justify-content: center;
     margin-bottom: 30px;
   }
@@ -19,14 +19,14 @@
   }
   margin-bottom: 15px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 0px;
   }
 }
 .filter__btn {
   padding: 6px 22px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 4px 20px;
   }
 

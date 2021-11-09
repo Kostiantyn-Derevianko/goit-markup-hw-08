@@ -13,7 +13,7 @@
   cursor: pointer;
   color: $main-text-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
   &:hover,
@@ -48,7 +48,7 @@
   transform: translateX(150%);
   transition: transform 250ms ease-in-out;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
