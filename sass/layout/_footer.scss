@@ -1,19 +1,20 @@
 /*----------- FOOTER------------- */
 .footer {
   background-color: #2f303a;
-}
-.footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
-
+}
+.footer__container {
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: baseline;
   }
 }
 .footer__wrapper {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 .footer__item {
@@ -21,11 +22,11 @@
     margin-bottom: 9px;
   }
 }
-.footer__list {
+.footer__left {
   text-align: center;
 
   @media screen and (max-width: 767px) {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     text-align: left;
@@ -48,8 +49,7 @@
   }
 }
 .footer__middle {
-  @media screen and (min-width: 1200px) {
-    padding-top: 12px;
+  @media screen and (min-width: $desktop) {
     margin-left: 70px;
   }
   text-align: center;
@@ -94,11 +94,11 @@
   fill: currentColor;
 }
 .footer__right {
-  padding-top: 60px;
+  margin-top: 60px;
   text-align: center;
 
   @media screen and (min-width: $desktop) {
-    padding-top: 12px;
+    margin-top: 0px;
     margin-left: 93px;
     text-align: left;
   }
@@ -120,6 +120,9 @@
   color: $white-text-color;
 }
 .email-input {
+  @media screen and (max-width: $mobile) {
+    max-width: 100%;
+  }
   @media screen and (max-width: 1199px) {
     display: block;
     margin: 0 auto;
